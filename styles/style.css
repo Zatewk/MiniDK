@@ -187,10 +187,10 @@ body {
     overflow: hidden;
   }
   .peach {
-    background: url("../images/peach-no-floor.png") center center no-repeat;
-    height: 100px;
+    background: url("../images/laia_no_floor.png") center center no-repeat;
+    height: 110px;
+    width: 110px;
     background-size: contain, 800px;
-    width: 100px;
     position: absolute;
     right: 0em;
     bottom: 11em;
@@ -201,7 +201,7 @@ body {
   .peach::after {
     content: "";
     position: absolute;
-    background: url(../images/piso.png) 0px 50px no-repeat;
+    background: url(../images/piso.png) 0px 57px no-repeat;
     background-size: 700px;
     height: 90px;
     width: 500%;
@@ -290,9 +290,9 @@ body {
   }
 
   .mario.right {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
+    height: 125px;
+    width: 125px;
+    background-size: 150px;
     position: relative;
     animation: mario-right 0.5s linear infinite;
     transition: translate 0.5s linear;
@@ -300,29 +300,29 @@ body {
   }
   @keyframes mario-right {
     from {
-      background: url("../images/mario-run.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-run.png") no-repeat center center;
+      background-size: 150px;
     }
     50% {
-      background: url("../images/mario-run-2.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-left-run-2.png") no-repeat center center;
+      background-size: 150px;
     }
     to {
-      background: url("../images/mario.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david.png") no-repeat center center;
+      background-size: 150px;
     }
   }
   .mario.view-left {
-    background: url("../images/mario-left.png") no-repeat center center;
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
+    background: url("../images/david-left.png") no-repeat center center;
+    height: 125px;
+    width: 125px;
+    background-size: 150px;
     position: relative;
     transition: all 0.1s ease-in;
   }
   .mario.left {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     background-size: contain;
     position: relative;
     animation: mario-left 0.4s linear infinite;
@@ -331,45 +331,45 @@ body {
 
   @keyframes mario-left {
     from {
-      background: url("../images/mario-left.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-left.png") no-repeat center center;
+      background-size: 150px;
     }
     50% {
-      background: url("../images/mario-left-run-2.png") no-repeat center center;
+      background: url("../images/david-left-run-2.png") no-repeat center center;
 
-      background-size: 100px;
+      background-size: 150px;
     }
     to {
-      background: url("../images/mario-left-run.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-left-run.png") no-repeat center center;
+      background-size: 150px;
     }
   }
 
   .mario.up {
-    background: url("../images/mario-up-r.png") no-repeat center center;
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
+    background: url("../images/david-up-r.png") no-repeat center center;
+    height: 125px;
+    width: 125px;
+    background-size: 150px;
     position: relative;
     top: -50px;
     left: 0;
     transition: all 0.1s ease-in;
   }
   .mario.up-left {
-    background: url("../images/mario-up-left.png") no-repeat center center;
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
+    background: url("../images/david-up-left.png") no-repeat center center;
+    height: 125px;
+    width: 125px;
+    background-size: 150px;
     position: relative;
     top: -50px;
     left: 0;
     transition: all 0.1s ease-in;
   }
   .mario {
-    background: url("../images/mario.png") no-repeat center center;
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
+    background: url("../images/david.png") no-repeat center center;
+    height: 125px;
+    width: 125px;
+    background-size: 150px;
     position: relative;
     transition: all 0.1s linear;
     transform: translatex(var(--contRight));
@@ -390,13 +390,13 @@ body {
   .barriles {
     position: relative;
     right: -1em;
-    top: 1em;
+    top: 1.55em;
   }
 
   .new-barril {
-    background: url("../images/barriles-2.gif") no-repeat center center;
-    height: 30px;
-    width: 30px;
+    background: url("../images/bombo.png") no-repeat center center;
+    height: 45px;
+    width: 45px;
     background-size: contain;
     position: absolute;
     bottom: 22px;
@@ -458,8 +458,8 @@ body {
   }
 
   .mario.martillo {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     background-size: contain;
     transform: translatex(var(--contRight));
     animation: mario-martillo-right 0.25s linear infinite;
@@ -468,18 +468,18 @@ body {
 
   @keyframes mario-martillo-right {
     from {
-      background: url("../images/run-martillo-2.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-run-guitar-2.png") no-repeat center center;
+      background-size: 150px;
     }
     100% {
-      background: url("../images/run-martillo.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-run-guitar.png") no-repeat center center;
+      background-size: 150px;
     }
   }
 
   .mario.martillo-left {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     background-size: contain;
     transform: translatex(var(--contRight));
     animation: mario-martillo-left 0.25s linear infinite;
@@ -487,13 +487,13 @@ body {
   }
   @keyframes mario-martillo-left {
     from {
-      background: url("../images/run-martillo-2.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-run-guitar-2.png") no-repeat center center;
+      background-size: 150px;
       transform: translatex(var(--contRight)) scaleX(-1);
     }
     100% {
-      background: url("../images/run-martillo.png") no-repeat center center;
-      background-size: 100px;
+      background: url("../images/david-run-guitar.png") no-repeat center center;
+      background-size: 150px;
       transform: translatex(var(--contRight)) scaleX(-1);
     }
   }

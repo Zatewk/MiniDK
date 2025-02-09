@@ -134,7 +134,7 @@ function start() {
   }
   const newBarrilTime = setInterval(() => {
     newBarril();
-  }, 2000);
+  }, 800);
 
   setTimeout(newBarril, 2100);
 
@@ -302,7 +302,7 @@ function gameOver() {
 function reiniciarGame() {
   entorno.className = "entorno";
   entorno.innerHTML = `
-  <img class="donkey-kong-banner animate__animated animate__bounceInDown" src="./images/donkey-kong.png" alt="donkey donkey-kong" height="200px">
+  <img class="donkey-kong-banner animate__animated animate__bounceInDown" src="./images/title.png" alt="donkey donkey-kong" height="200px">
   `;
   const btn = document.createElement("button");
   btn.className = "btn-start restart animate__animated animate__tada";
@@ -315,12 +315,12 @@ function martillo() {
   img.className = "img-martillo";
   img.style = ` 
     position: absolute;
-    top: 60%;
-    right: 80%;  
+    top: 55%;
+    right: 70%;  
   `;
-  img.src = "./images/martillo.png";
-  img.height = "60";
-  img.width = "60";
+  img.src = "./images/guitar.png";
+  img.height = "80";
+  img.width = "80";
   entorno.appendChild(img);
 }
 
@@ -336,14 +336,14 @@ function playGame() {
         <div class="container-kong">
           <img
             class="mono"
-            src="./images/mono.gif"
+            src="./images/gorila.gif"
             alt="mono"
-            height="160"
-            width="160px"
+            height="170"
+            width="170"
           />
           <img
             class="barriles"
-            src="./images/barriles.png"
+            src="./images/cases.png"
             alt="barriles"
             height="140"
             width="140"
