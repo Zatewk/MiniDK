@@ -230,7 +230,7 @@ function start() {
     const peach = document.querySelector(".peach");
     const img = document.createElement("img");
     img.className = "hearts";
-    img.src = "../images/broken.png";
+    img.src = "./images/broken.png";
     img.height = 40;
     img.width = 40;
     setTimeout(() => {
@@ -245,7 +245,7 @@ function start() {
     const peach = document.querySelector(".peach");
     const img = document.createElement("img");
     img.className = "words";
-    img.src = "../images/bocadillo.png";
+    img.src = "./images/bocadillo.png";
     img.height = 200;
     img.width = 200;
     setTimeout(() => {
