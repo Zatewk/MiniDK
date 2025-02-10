@@ -230,29 +230,45 @@ function start() {
     const peach = document.querySelector(".peach");
     const img = document.createElement("img");
     img.className = "hearts";
-    img.src = "../images/hearts.png";
+    img.src = "../images/broken.png";
     img.height = 40;
     img.width = 40;
     setTimeout(() => {
       peach.appendChild(img);
     }, 2000);
+    setTimeout(() => {
+      img.remove();
+    }, 3000);
   }
-  function downFloor() {
+  const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+  function words() {
+    const peach = document.querySelector(".peach");
+    const img = document.createElement("img");
+    img.className = "words";
+    img.src = "../images/bocadillo.png";
+    img.height = 200;
+    img.width = 200;
+    setTimeout(() => {
+      peach.appendChild(img);
+    }, 1000);
+  }
+
+  async function downFloor() {
     if (document.querySelector(".floor-right")) {
       const pMario = mario.getBoundingClientRect();
       const pFloor = document
-        .querySelector(".floor-right")
-        .getBoundingClientRect();
+          .querySelector(".floor-right")
+          .getBoundingClientRect();
       const pxMario = Math.floor(pMario.x);
       const pxFloor = Math.floor(pFloor.x);
 
       if (pxFloor - pxMario < 90) {
         document
-          .querySelector(".floor-right")
-          .classList.add("animate__animated", "animate__fadeOutDownBig");
+            .querySelector(".floor-right")
+            .classList.add("animate__animated", "animate__fadeOutDownBig");
         document
-          .querySelector(".container-kong")
-          .classList.add("animate__animated", "animate__fadeOutDownBig");
+            .querySelector(".container-kong")
+            .classList.add("animate__animated", "animate__fadeOutDownBig");
         document.querySelector(".peach").classList.add("peach-down");
         mario.className = "mario no-move";
         puntuacion += 2500;
@@ -260,6 +276,8 @@ function start() {
         mario.setAttribute("style", `--contRight:${contRight}px`);
         score();
         hearts();
+        await sleep(2000)
+        words()
         setTimeout(() => {
           reiniciarGame();
         }, 7000);

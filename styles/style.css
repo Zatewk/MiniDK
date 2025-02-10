@@ -133,8 +133,6 @@ body {
     justify-content: space-between;
     width: min(800px, 90%);
     padding: 0 0em;
-    background: url("../images/escalera.png") 200px 285px no-repeat,
-      url("../images/piso.png") center 350px no-repeat;
     background-color: #222221;
     height: 400px;
     align-items: flex-end;
@@ -230,6 +228,11 @@ body {
     100% {
       transform: translate(-5px, -30px);
     }
+  }
+  .words {
+    position: inherit;
+    left: -0.5em;
+    transform: translate(-120px, -170px);
   }
   .donkey-kong-banner {
     position: absolute;
