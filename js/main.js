@@ -279,7 +279,7 @@ function start() {
         await sleep(2000)
         words()
         setTimeout(() => {
-          reiniciarGame();
+          gameWon();
         }, 7000);
       }
     }
@@ -308,6 +308,17 @@ function addLives() {
 }
 function gameOver() {
   entorno.classList.add("game-over");
+  while (entorno.firstChild) {
+    entorno.removeChild(entorno.firstChild);
+  }
+  const btn = document.createElement("button");
+  btn.className = "btn-start restart animate__animated animate__tada";
+  btn.onclick = playGame;
+  btn.textContent = "Restart";
+  entorno.appendChild(btn);
+}
+function  gameWon() {
+  entorno.classList.add("game-won");
   while (entorno.firstChild) {
     entorno.removeChild(entorno.firstChild);
   }

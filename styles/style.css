@@ -255,6 +255,22 @@ body {
     position: relative;
     z-index: 1;
   }
+  .entorno.game-won {
+    display: flex;
+    justify-content: space-between;
+    width: min(800px, 90%);
+    padding: 0 0em;
+    background: #222221;
+    height: 400px;
+    align-items: flex-end;
+    border-radius: 0.5rem;
+    background: black url("../images/ending.png") center 20px no-repeat;
+    background-size: 300px;
+    background-position-y: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
   .btn-start {
     font: var(--button);
     background: transparent;
