@@ -1,3 +1,3 @@
-# Game donkey-kong
+# Game dagmara-presents
 
-![Donkey Kong](https://github.com/eduardoguette/donkey-kong/blob/main/Screenshot_3.jpg?raw=true)
+![Dagmara Presents](https://github.com/Zatewk/MiniDK/blob/master/screenshot.jpg?raw=true)
